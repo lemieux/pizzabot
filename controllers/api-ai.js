@@ -7,7 +7,6 @@ const apiApp = apiai(config.get('API_AI_CLIENT_ACCESS'), config.get('API_AI_SUBS
 const smoochController = require('./smooch');
 
 const PIZZA_RATIO = 3.0 / 8.0;
-const INVERSED_PIZZA_RATIO = 8.0 / 3.0;
 
 module.exports.call = (userId, message) => {
     return new Promise((resolve, reject) => {
@@ -98,6 +97,6 @@ let handleBillSplitting = (userId, amount, people, tip) => {
     return Promise.resolve().then(() => {
         let fullAmount = amount * (1 + tip / 100);
         let parts = parseFloat(fullAmount / people).toFixed(2);
-        return smoochController.sendMessage(userId, `That makes ${parts}$ each!`);
+        return smoochController.sendMessage(userId, `That makes ${parts}$ each.`);
     }).catch(console.log);
 }

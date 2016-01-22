@@ -8,7 +8,7 @@ var config = require('../config');
 var errors = require('../errors');
 var aiController = require('./api-ai');
 
-const webhookUrl = urljoin(config.get('PUBLIC_URL'), 'api/webhooks/smooch');
+const webhookUrl = urljoin(config.get('HOST'), 'api/webhooks/smooch');
 
 const core = new Smooch({
     keyId: config.get('SMOOCH_KEYID'),
