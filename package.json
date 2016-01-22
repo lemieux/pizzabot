@@ -1,0 +1,17 @@
+{
+  "name": "smooch-apiai-bot",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "apiai": "^1.0.3",
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "nconf": "^0.8.2",
+    "smooch-core": "0.0.14",
+    "urljoin": "^0.1.5"
+  },
+  "devDependencies": {}
+}
