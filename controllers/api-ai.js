@@ -2,13 +2,15 @@
 
 const config = require('../config');
 const apiai = require('apiai');
-const apiApp = apiai(config.get('API_AI_CLIENT_ACCESS'), config.get('API_AI_SUBSCRIPTION_KEY'));
 
 const smoochController = require('./smooch');
 
 const PIZZA_RATIO = 3.0 / 8.0;
 
 module.exports.call = (userId, message) => {
+    const apiApp = apiai(config.get('API_AI_CLIENT_ACCESS'), config.get('API_AI_SUBSCRIPTION_KEY'), {
+        sessionId: userId
+    });
     return new Promise((resolve, reject) => {
         let request = apiApp.textRequest(message);
         request.on('response', (response) => {
