@@ -3,7 +3,7 @@ Ever had that silly idea of building an app for fun, but you don't want to build
 
 Here's my silly idea : ever wondered how many pizzas you should order?
 
-Well, someone at [Gawker](http://gawker.com/how-many-pizzas-should-you-order-the-pizza-equation-wi-1697815579) came up with the basic to do it and it works surprisingly well. Now, let's make that a service people can text and get their answer.
+Well, someone at [Gawker](http://gawker.com/how-many-pizzas-should-you-order-the-pizza-equation-wi-1697815579) came up with the basic math to do it and it works surprisingly well. Now, let's make that a service people can text and get their answer.
 
 By combining [Smooch](https://smooch.io?utm_source=pizzabot), [Twilio](https://twilio.com), and [api.ai](https://api.ai), you can do this quite easily. Smooch allows you a Twilio number to your server using webhooks. Smooch will send the message to your server everytime someone texts your Twilio number. With that message, the server forwards it to api.ai. Then, you can leverage the intents we previously created on api.ai to take action on these messages.
 
