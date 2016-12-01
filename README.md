@@ -11,7 +11,7 @@ api.ai has this really nice [dialog](https://docs.api.ai/docs/dialogs) feature t
 
 The concept of this server is pretty much : let api.ai do the talking and once it sends us a completed action, let's decide if it's actionable or not. For this server, I decided to let api.ai do the smalltalk and to handle pizza count calculations and bill splitting. From that point, it's really up to you to decide whatever action you should handle.
 
-Enough talk, just try it! Text something at [514-700-4559](tel:514-700-4559) and see for yourself!
+Enough talk, just try it! Text something at (no longer in service) and see for yourself!
 
 This server basically need only these environment variables to run on Heroku :
 
